@@ -1,0 +1,12 @@
+@use '../utilities/variables' as *;
+
+.navbar-nav {
+    .nav-link {
+        color: $color-fondo;
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #FF8F5E;
+        }
+    }
+}

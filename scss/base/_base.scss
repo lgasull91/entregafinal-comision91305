@@ -1,0 +1,18 @@
+@use '../utilities/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $font-cuerpo;
+    background-color: $color-fondo;
+    color: $color-primario;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid $color-primario;
+    margin: 30px 0;
+}

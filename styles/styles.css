@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #DEE5E5;
+  color: #082D0F;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #082D0F;
+  margin: 30px 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn, .form-control {
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+@keyframes aparecer-logo {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.navbar {
+  background-color: #364545;
+}
+.navbar-brand img {
+  height: 150px;
+  width: auto;
+  max-width: 100%;
+  border: 2px solid black;
+  border-radius: 12px;
+  display: block;
+  animation: aparecer-logo 0.6s ease-out;
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    height: 90px;
+  }
+}
+
+.navbar-nav .nav-link {
+  color: #DEE5E5;
+  transition: color 0.2s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #FF8F5E;
+}
+
+.footer {
+  border-top: 2px solid #082D0F;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+.footer ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+}
+
+.carousel-inner,
+.carousel-item {
+  height: 750px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
+.cardInfo {
+  border: 1px solid black;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  flex: 1;
+}
+.cardInfo figure {
+  margin: 0;
+}
+.cardInfo figure img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.cardInfo figure figcaption {
+  padding: 10px;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .cards-container {
+    flex-direction: row;
+  }
+}
+
+.btn {
+  background-color: #082D0F;
+  color: white;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+
+.form-control {
+  border: 1px solid black;
+  cursor: text;
+}
+
+/*# sourceMappingURL=styles.css.map */

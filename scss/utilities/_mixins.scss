@@ -1,0 +1,27 @@
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@mixin respond($ancho, $tipo: max) {
+    @if $tipo==max {
+        @media (max-width: $ancho) {
+            @content;
+        }
+    }
+
+    @else if $tipo==min {
+        @media (min-width: $ancho) {
+            @content;
+        }
+    }
+}
+
+%interactivo-base {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
