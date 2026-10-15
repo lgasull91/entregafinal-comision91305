@@ -4,7 +4,7 @@ Sitio web informativo sobre el mundo del mate y la yerba mate: estilos de mate, 
 
 ## 🔗 Sitio en vivo
 
-**Deploy en Vercel:** [COMPLETAR CON LA URL DEL DEPLOY]
+**Deploy 
 
 ## 📄 Páginas
 
